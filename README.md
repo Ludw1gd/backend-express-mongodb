@@ -1,31 +1,17 @@
-# Node.js Hello World
+# pweb-express-mongodb-P16-2024
 
-Simple Node.js + Vercel example that returns a "Hello World" response.
+## Prerequisites
 
-## How to Use
+1. Clone repo ini
 
-You can choose from one of the following two methods to use this repository:
+2. Buat file `.env` untuk setup variabel environment connection string mongodb atlas, port dan token:
 
-### One-Click Deploy
-
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/node-hello-world&project-name=node-hello-world&repository-name=node-hello-world)
-
-### Clone and Deploy
-
-```bash
-git clone https://github.com/vercel/examples/tree/main/solutions/node-hello-world
+```conf
+MONGODB_URI=mongodb+srv://ludwigd:Batusangkar24!@pemweb.yosli.mongodb.net/p16?retryWrites=true&w=majority&appName=[]
+PORT=5000
+JWT_SECRET="ghcchcghg"
 ```
 
-Install the Vercel CLI:
+Kalau tidak connect ke database, coba ganti `ludwigd` dengan username akun mongodb kalian.
 
-```bash
-npm i -g vercel
-```
-
-Then run the app at the root of the repository:
-
-```bash
-vercel dev
-```
+3. `npm run start:dev`
